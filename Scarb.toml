@@ -10,9 +10,15 @@ sierra-replace-ids = true
 migrate = "sozo build && sozo migrate apply"
 katana = "katana --disable-fee  --allowed-origins \"*\""
 torii = "torii --world 0xb4079627ebab1cd3cf9fd075dda1ad2454a7a448bf659591f259efa2519b18 --allowed-origins \"*\""
-spawn = "./scripts/spawn.sh"
-move = "./scripts/move.sh"
+
 setup_game = "./scripts/setup_game.sh"
+
+move_left = "./scripts/move_left.sh"
+move_right = "./scripts/move_right.sh"
+move_middle = "./scripts/move_middle.sh"
+
+enemy_attack = "./scripts/enemy_attack.sh"
+
 [dependencies]
 dojo = { git = "https://github.com/dojoengine/dojo", tag = "v0.7.1" }
 

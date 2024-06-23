@@ -1,0 +1,20 @@
+kind = "DojoModel"
+class_hash = "0x34f13cbb9d3b9e76892cc5b7c41437860ca65665c1e88ee93cc43fadfebb5b4"
+original_class_hash = "0x34f13cbb9d3b9e76892cc5b7c41437860ca65665c1e88ee93cc43fadfebb5b4"
+abi = "manifests/dev/abis/base/models/dojo_starter_models_enemy_dice.json"
+name = "dojo_starter::models::enemy::dice"
+
+[[members]]
+name = "face_count"
+type = "u8"
+key = true
+
+[[members]]
+name = "seed"
+type = "felt252"
+key = false
+
+[[members]]
+name = "nonce"
+type = "felt252"
+key = false

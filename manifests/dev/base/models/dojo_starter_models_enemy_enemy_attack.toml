@@ -1,0 +1,15 @@
+kind = "DojoModel"
+class_hash = "0x5434e411f94339d79a24296abea435e045a9213a6abde6fadac3f11d5523efb"
+original_class_hash = "0x5434e411f94339d79a24296abea435e045a9213a6abde6fadac3f11d5523efb"
+abi = "manifests/dev/abis/base/models/dojo_starter_models_enemy_enemy_attack.json"
+name = "dojo_starter::models::enemy::enemy_attack"
+
+[[members]]
+name = "player_id"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "location"
+type = "u8"
+key = false
