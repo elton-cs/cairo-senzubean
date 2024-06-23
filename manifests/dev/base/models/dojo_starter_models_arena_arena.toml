@@ -1,0 +1,15 @@
+kind = "DojoModel"
+class_hash = "0x53abafbdde431771a8c09792becd1de91e7c631ad2707106a03a9407bd9cf45"
+original_class_hash = "0x53abafbdde431771a8c09792becd1de91e7c631ad2707106a03a9407bd9cf45"
+abi = "manifests/dev/abis/base/models/dojo_starter_models_arena_arena.json"
+name = "dojo_starter::models::arena::arena"
+
+[[members]]
+name = "player_id"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "bounds"
+type = "Vec2D"
+key = false

@@ -55,55 +55,17 @@
   },
   {
     "type": "impl",
-    "name": "ActionsImpl",
-    "interface_name": "dojo_starter::systems::actions::IActions"
-  },
-  {
-    "type": "enum",
-    "name": "dojo_starter::models::moves::Direction",
-    "variants": [
-      {
-        "name": "None",
-        "type": "()"
-      },
-      {
-        "name": "Left",
-        "type": "()"
-      },
-      {
-        "name": "Right",
-        "type": "()"
-      },
-      {
-        "name": "Up",
-        "type": "()"
-      },
-      {
-        "name": "Down",
-        "type": "()"
-      }
-    ]
+    "name": "ArenaImpl",
+    "interface_name": "dojo_starter::systems::arena::IArenaActions"
   },
   {
     "type": "interface",
-    "name": "dojo_starter::systems::actions::IActions",
+    "name": "dojo_starter::systems::arena::IArenaActions",
     "items": [
       {
         "type": "function",
-        "name": "spawn",
+        "name": "spawn_arena",
         "inputs": [],
-        "outputs": [],
-        "state_mutability": "external"
-      },
-      {
-        "type": "function",
-        "name": "move",
-        "inputs": [
-          {
-            "name": "direction",
-            "type": "dojo_starter::models::moves::Direction"
-          }
-        ],
         "outputs": [],
         "state_mutability": "external"
       }
@@ -112,11 +74,11 @@
   {
     "type": "impl",
     "name": "IDojoInitImpl",
-    "interface_name": "dojo_starter::systems::actions::actions::IDojoInit"
+    "interface_name": "dojo_starter::systems::arena::arena::IDojoInit"
   },
   {
     "type": "interface",
-    "name": "dojo_starter::systems::actions::actions::IDojoInit",
+    "name": "dojo_starter::systems::arena::arena::IDojoInit",
     "items": [
       {
         "type": "function",
@@ -176,7 +138,7 @@
   },
   {
     "type": "event",
-    "name": "dojo_starter::systems::actions::actions::Event",
+    "name": "dojo_starter::systems::arena::arena::Event",
     "kind": "enum",
     "variants": [
       {

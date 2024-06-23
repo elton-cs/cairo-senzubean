@@ -55,16 +55,16 @@
   },
   {
     "type": "impl",
-    "name": "SenzubeanImpl",
-    "interface_name": "dojo_starter::systems::senzubean::ISenzubeanActions"
+    "name": "ArenaImpl",
+    "interface_name": "dojo_starter::systems::arena::IArenaActions"
   },
   {
     "type": "interface",
-    "name": "dojo_starter::systems::senzubean::ISenzubeanActions",
+    "name": "dojo_starter::systems::arena::IArenaActions",
     "items": [
       {
         "type": "function",
-        "name": "spawn_senzubean",
+        "name": "spawn_arena",
         "inputs": [],
         "outputs": [],
         "state_mutability": "external"
@@ -74,11 +74,11 @@
   {
     "type": "impl",
     "name": "IDojoInitImpl",
-    "interface_name": "dojo_starter::systems::senzubean::senzubean::IDojoInit"
+    "interface_name": "dojo_starter::systems::arena::arena::IDojoInit"
   },
   {
     "type": "interface",
-    "name": "dojo_starter::systems::senzubean::senzubean::IDojoInit",
+    "name": "dojo_starter::systems::arena::arena::IDojoInit",
     "items": [
       {
         "type": "function",
@@ -138,7 +138,7 @@
   },
   {
     "type": "event",
-    "name": "dojo_starter::systems::senzubean::senzubean::Event",
+    "name": "dojo_starter::systems::arena::arena::Event",
     "kind": "enum",
     "variants": [
       {

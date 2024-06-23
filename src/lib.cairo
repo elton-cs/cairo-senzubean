@@ -1,15 +1,12 @@
 mod systems {
-    mod actions;
     mod senzubean;
+    mod arena;
 }
 
 mod models {
-    mod moves;
-    mod position;
     mod senzubean;
+    mod arena;
     mod common;
 }
 
-mod tests {
-    mod test_world;
-}
+mod tests {}

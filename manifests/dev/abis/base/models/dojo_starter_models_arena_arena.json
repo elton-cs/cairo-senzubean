@@ -319,52 +319,40 @@
   },
   {
     "type": "impl",
-    "name": "directions_availableImpl",
-    "interface_name": "dojo_starter::models::moves::Idirections_available"
+    "name": "arenaImpl",
+    "interface_name": "dojo_starter::models::arena::Iarena"
   },
   {
-    "type": "enum",
-    "name": "dojo_starter::models::moves::Direction",
-    "variants": [
+    "type": "struct",
+    "name": "dojo_starter::models::common::Vec2D",
+    "members": [
       {
-        "name": "None",
-        "type": "()"
+        "name": "x",
+        "type": "core::integer::u32"
       },
       {
-        "name": "Left",
-        "type": "()"
-      },
-      {
-        "name": "Right",
-        "type": "()"
-      },
-      {
-        "name": "Up",
-        "type": "()"
-      },
-      {
-        "name": "Down",
-        "type": "()"
+        "name": "y",
+        "type": "core::integer::u32"
       }
     ]
   },
   {
     "type": "struct",
-    "name": "dojo_starter::models::moves::DirectionsAvailable",
+    "name": "dojo_starter::models::arena::Arena",
     "members": [
       {
-        "name": "player",
+        "name": "player_id",
         "type": "core::starknet::contract_address::ContractAddress"
       },
       {
-        "name": "directions",
-        "type": "core::array::Array::<dojo_starter::models::moves::Direction>"
+        "name": "bounds",
+        "type": "dojo_starter::models::common::Vec2D"
       }
     ]
   },
   {
     "type": "interface",
-    "name": "dojo_starter::models::moves::Idirections_available",
+    "name": "dojo_starter::models::arena::Iarena",
     "items": [
       {
         "type": "function",
@@ -372,7 +360,7 @@
         "inputs": [
           {
             "name": "model",
-            "type": "dojo_starter::models::moves::DirectionsAvailable"
+            "type": "dojo_starter::models::arena::Arena"
           }
         ],
         "outputs": [],
@@ -382,7 +370,7 @@
   },
   {
     "type": "event",
-    "name": "dojo_starter::models::moves::directions_available::Event",
+    "name": "dojo_starter::models::arena::arena::Event",
     "kind": "enum",
     "variants": []
   }

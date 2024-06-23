@@ -319,74 +319,40 @@
   },
   {
     "type": "impl",
-    "name": "movesImpl",
-    "interface_name": "dojo_starter::models::moves::Imoves"
+    "name": "arenaImpl",
+    "interface_name": "dojo_starter::models::arena::Iarena"
   },
   {
-    "type": "enum",
-    "name": "dojo_starter::models::moves::Direction",
-    "variants": [
+    "type": "struct",
+    "name": "dojo_starter::models::common::Vec2D",
+    "members": [
       {
-        "name": "None",
-        "type": "()"
+        "name": "x",
+        "type": "core::integer::u32"
       },
       {
-        "name": "Left",
-        "type": "()"
-      },
-      {
-        "name": "Right",
-        "type": "()"
-      },
-      {
-        "name": "Up",
-        "type": "()"
-      },
-      {
-        "name": "Down",
-        "type": "()"
-      }
-    ]
-  },
-  {
-    "type": "enum",
-    "name": "core::bool",
-    "variants": [
-      {
-        "name": "False",
-        "type": "()"
-      },
-      {
-        "name": "True",
-        "type": "()"
+        "name": "y",
+        "type": "core::integer::u32"
       }
     ]
   },
   {
     "type": "struct",
-    "name": "dojo_starter::models::moves::Moves",
+    "name": "dojo_starter::models::arena::Arena",
     "members": [
       {
-        "name": "player",
+        "name": "player_id",
         "type": "core::starknet::contract_address::ContractAddress"
       },
       {
-        "name": "remaining",
-        "type": "core::integer::u8"
-      },
-      {
-        "name": "last_direction",
-        "type": "dojo_starter::models::moves::Direction"
-      },
-      {
-        "name": "can_move",
-        "type": "core::bool"
+        "name": "bounds",
+        "type": "dojo_starter::models::common::Vec2D"
       }
     ]
   },
   {
     "type": "interface",
-    "name": "dojo_starter::models::moves::Imoves",
+    "name": "dojo_starter::models::arena::Iarena",
     "items": [
       {
         "type": "function",
@@ -394,7 +360,7 @@
         "inputs": [
           {
             "name": "model",
-            "type": "dojo_starter::models::moves::Moves"
+            "type": "dojo_starter::models::arena::Arena"
           }
         ],
         "outputs": [],
@@ -404,7 +370,7 @@
   },
   {
     "type": "event",
-    "name": "dojo_starter::models::moves::moves::Event",
+    "name": "dojo_starter::models::arena::arena::Event",
     "kind": "enum",
     "variants": []
   }

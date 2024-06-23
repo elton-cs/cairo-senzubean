@@ -64,7 +64,7 @@
     "items": [
       {
         "type": "function",
-        "name": "create",
+        "name": "spawn_senzubean",
         "inputs": [],
         "outputs": [],
         "state_mutability": "external"
