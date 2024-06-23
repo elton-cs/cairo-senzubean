@@ -14,7 +14,7 @@ mod arena {
     impl ArenaImpl of IArenaActions<ContractState> {
         fn spawn_arena(ref world: IWorldDispatcher) {
             let player_id = get_caller_address();
-            let arena = Arena { player_id, bounds: Vec2D { x: 6, y: 3 } };
+            let arena = Arena { player_id, bounds: Vec2D { x: 7, y: 3 } };
 
             set!(world, (arena));
         }

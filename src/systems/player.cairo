@@ -16,7 +16,7 @@ mod player {
         fn spawn_player(ref world: IWorldDispatcher) {
             let player_id = get_caller_address();
 
-            let player = Player { player_id, position: Vec2D { x: 0, y: 1 }, health: 3 };
+            let player = Player { player_id, position: Vec2D { x: 1, y: 2 }, health: 3 };
 
             set!(world, (player));
         }
@@ -36,9 +36,9 @@ mod player {
     fn new_position(mut position: Vec2D, tile: felt252) -> Vec2D {
         position.x += 1;
         match tile {
-            0 => position.y = 0,
-            1 => position.y = 1,
-            2 => position.y = 2,
+            0 => position.y = 1,
+            1 => position.y = 2,
+            2 => position.y = 3,
             _ => panic!("Invalid tile selected!")
         }
         position
