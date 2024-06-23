@@ -14,7 +14,7 @@ struct Dice {
 
 trait DiceTrait {
     fn new(face_count: u8, seed: felt252) -> Dice;
-    fn roll(ref self: Dice) -> u8;
+    fn roll(ref self: Dice) -> (Dice, u8);
 }
 
 impl DiceImpl of DiceTrait {
@@ -24,13 +24,15 @@ impl DiceImpl of DiceTrait {
     }
 
     #[inline(always)]
-    fn roll(ref self: Dice) -> u8 {
+    fn roll(ref self: Dice) -> (Dice, u8) {
         let mut state = PoseidonTrait::new();
         state = state.update(self.seed);
         state = state.update(self.nonce);
         self.nonce += 1;
         let random: u256 = state.finalize().into();
-        (random % self.face_count.into() + 1).try_into().unwrap()
+        let random_num = (random % self.face_count.into() + 1).try_into().unwrap();
+
+        (self, random_num)
     }
 }
 

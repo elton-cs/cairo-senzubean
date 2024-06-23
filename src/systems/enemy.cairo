@@ -28,9 +28,10 @@ mod enemy {
 
             let mut dice = get!(world, DICE_FACE_COUNT, (Dice));
 
-            let attack = dice.roll();
+            let (new_dice, attack) = dice.roll();
             let enemy = EnemyAttack { player_id, location: attack };
-            set!(world, (enemy))
+            set!(world, (enemy));
+            set!(world, (new_dice));
         }
     }
 }
