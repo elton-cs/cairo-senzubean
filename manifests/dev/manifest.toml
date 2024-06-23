@@ -36,6 +36,19 @@ computed = []
 init_calldata = []
 name = "dojo_starter::systems::actions::actions"
 
+[[contracts]]
+kind = "DojoContract"
+address = "0x3538033eccc74691dbd6aab9b4d63c51d667d42bc2aa17633a391c8b5486bdb"
+class_hash = "0x5590342301ed7a1fd90eee266f85ef9bb0e02fd8999f5e01d1f782bc9bdfd0f"
+original_class_hash = "0x5590342301ed7a1fd90eee266f85ef9bb0e02fd8999f5e01d1f782bc9bdfd0f"
+base_class_hash = "0x22f3e55b61d86c2ac5239fa3b3b8761f26b9a5c0b5f61ddbd5d756ced498b46"
+abi = "manifests/dev/abis/deployments/contracts/dojo_starter_systems_senzubean_senzubean.json"
+reads = []
+writes = []
+computed = []
+init_calldata = []
+name = "dojo_starter::systems::senzubean::senzubean"
+
 [[models]]
 kind = "DojoModel"
 class_hash = "0x13fc796dd2d767ca4051ee20d673074f74b6e6b072bef1926ba429e427c8080"
@@ -95,6 +108,28 @@ key = true
 [[models.members]]
 name = "vec"
 type = "Vec2"
+key = false
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x4766a9d5a0b872aa52f21982762e19924c78b0c4de2cd58329d03f7863bfcc3"
+original_class_hash = "0x4766a9d5a0b872aa52f21982762e19924c78b0c4de2cd58329d03f7863bfcc3"
+abi = "manifests/dev/abis/deployments/models/dojo_starter_models_senzubean_senzubean.json"
+name = "dojo_starter::models::senzubean::senzubean"
+
+[[models.members]]
+name = "player_id"
+type = "ContractAddress"
+key = true
+
+[[models.members]]
+name = "point"
+type = "Vec2D"
+key = false
+
+[[models.members]]
+name = "is_eaten"
+type = "bool"
 key = false
 
 [[models]]

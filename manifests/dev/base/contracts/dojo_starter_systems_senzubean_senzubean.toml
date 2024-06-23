@@ -1,0 +1,10 @@
+kind = "DojoContract"
+class_hash = "0x5590342301ed7a1fd90eee266f85ef9bb0e02fd8999f5e01d1f782bc9bdfd0f"
+original_class_hash = "0x5590342301ed7a1fd90eee266f85ef9bb0e02fd8999f5e01d1f782bc9bdfd0f"
+base_class_hash = "0x0"
+abi = "manifests/dev/abis/base/contracts/dojo_starter_systems_senzubean_senzubean.json"
+reads = []
+writes = []
+computed = []
+init_calldata = []
+name = "dojo_starter::systems::senzubean::senzubean"
