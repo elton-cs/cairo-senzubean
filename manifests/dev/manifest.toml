@@ -22,8 +22,8 @@ name = "dojo::base::base"
 [[contracts]]
 kind = "DojoContract"
 address = "0x68dbbcc8da92234efb6f0854ac7bda623e45bab07b29657c795b80d027d611"
-class_hash = "0x511f502b96909680c4f66a047ca5b7ae615f7e800b1ff5255525d28f9bc684f"
-original_class_hash = "0x511f502b96909680c4f66a047ca5b7ae615f7e800b1ff5255525d28f9bc684f"
+class_hash = "0x16795fb9daacd22359e5a2a7cfb73b0eee1243fe36268e0fbbead0d927acb8e"
+original_class_hash = "0x16795fb9daacd22359e5a2a7cfb73b0eee1243fe36268e0fbbead0d927acb8e"
 base_class_hash = "0x22f3e55b61d86c2ac5239fa3b3b8761f26b9a5c0b5f61ddbd5d756ced498b46"
 abi = "manifests/dev/abis/deployments/contracts/dojo_starter_systems_arena_arena.json"
 reads = []
@@ -31,6 +31,19 @@ writes = []
 computed = []
 init_calldata = []
 name = "dojo_starter::systems::arena::arena"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0x353d00f00d802c4bf0958b26e4a82f6feaf4809c14f4316e4d97f32b12d0b2c"
+class_hash = "0x47e2c187dd2836f117c119a7f39e1896ee59e6947176442d2482dee7d00804c"
+original_class_hash = "0x47e2c187dd2836f117c119a7f39e1896ee59e6947176442d2482dee7d00804c"
+base_class_hash = "0x22f3e55b61d86c2ac5239fa3b3b8761f26b9a5c0b5f61ddbd5d756ced498b46"
+abi = "manifests/dev/abis/deployments/contracts/dojo_starter_systems_player_player.json"
+reads = []
+writes = []
+computed = []
+init_calldata = []
+name = "dojo_starter::systems::player::player"
 
 [[contracts]]
 kind = "DojoContract"
@@ -60,6 +73,28 @@ key = true
 [[models.members]]
 name = "bounds"
 type = "Vec2D"
+key = false
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x1c8251b68c4a99c10a54803b2c8371fedaeea25dd718c5b8a71ea9cb04988af"
+original_class_hash = "0x1c8251b68c4a99c10a54803b2c8371fedaeea25dd718c5b8a71ea9cb04988af"
+abi = "manifests/dev/abis/deployments/models/dojo_starter_models_player_player.json"
+name = "dojo_starter::models::player::player"
+
+[[models.members]]
+name = "player_id"
+type = "ContractAddress"
+key = true
+
+[[models.members]]
+name = "position"
+type = "Vec2D"
+key = false
+
+[[models.members]]
+name = "health"
+type = "u8"
 key = false
 
 [[models]]

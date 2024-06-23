@@ -13,10 +13,8 @@ mod senzubean {
     #[abi(embed_v0)]
     impl SenzubeanImpl of ISenzubeanActions<ContractState> {
         fn spawn_senzubean(ref world: IWorldDispatcher) {
-            let player = get_caller_address();
-            let senzubean = Senzubean {
-                player_id: player, point: Vec2D { x: 6, y: 2 }, is_eaten: false
-            };
+            let player_id = get_caller_address();
+            let senzubean = Senzubean { player_id, point: Vec2D { x: 6, y: 2 }, is_eaten: false };
 
             set!(world, (senzubean));
         }
