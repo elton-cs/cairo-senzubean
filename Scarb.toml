@@ -12,7 +12,7 @@ katana = "katana --disable-fee  --allowed-origins \"*\""
 torii = "torii --world 0xb4079627ebab1cd3cf9fd075dda1ad2454a7a448bf659591f259efa2519b18 --allowed-origins \"*\""
 spawn = "./scripts/spawn.sh"
 move = "./scripts/move.sh"
-
+setup_game = "./scripts/setup_game.sh"
 [dependencies]
 dojo = { git = "https://github.com/dojoengine/dojo", tag = "v0.7.1" }
 
