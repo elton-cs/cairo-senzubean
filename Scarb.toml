@@ -22,11 +22,19 @@ dojo = { git = "https://github.com/dojoengine/dojo", tag = "v0.7.1" }
 initializer_class_hash = "0xbeef"
 
 [tool.dojo.env]
-rpc_url = "http://localhost:5050/"
+#rpc_url = "http://localhost:5050/"
 # Default account for katana with seed = 0
-account_address = "0xb3ff441a68610b30fd5e2abbf3a1548eb6ba6f3559f2862bf2dc757e5828ca"
-private_key = "0x2bbf4f9fd0bbb2e60b0316c1fe0b76cf7a4d0198bd493ced9b8df2a3a24d68a"
-world_address = "0xb4079627ebab1cd3cf9fd075dda1ad2454a7a448bf659591f259efa2519b18"  # Uncomment and update this line with your world address.
+#account_address = "0xb3ff441a68610b30fd5e2abbf3a1548eb6ba6f3559f2862bf2dc757e5828ca"
+#private_key = "0x2bbf4f9fd0bbb2e60b0316c1fe0b76cf7a4d0198bd493ced9b8df2a3a24d68a"
+
+world_address = "0xb4079627ebab1cd3cf9fd075dda1ad2454a7a448bf659591f259efa2519b18"
+
+# slot deployments
+rpc_url = "https://api.cartridge.gg/x/new/katana"
+account_address = "0x60ee755c247a581e99828e558b61008da4ab78553f1f24e5daeba6a735c3d62"
+private_key = "0x1f25ad09152b7b9644ccff4a2d38bc0549793aa6cf7782e7da40d3322ca61b4"
+#GRAPHQL: https://api.cartridge.gg/x/new/torii/graphql
+#GRPC: https://api.cartridge.gg/x/new/torii
 
 [tool.dojo.world]
 name = "Dojo starter"

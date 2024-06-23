@@ -1000,12 +1000,12 @@
       }
     ],
     "address": "0xb4079627ebab1cd3cf9fd075dda1ad2454a7a448bf659591f259efa2519b18",
-    "transaction_hash": "0x3a729aa09b4ad351fbc724f94c6d599037a53d7d9b5a182097a60fb09d0486c",
+    "transaction_hash": "0x96648b6b133dee3e821aa3e11bc85332f837e989901ecfea78961cafdbd24c",
     "block_number": 3,
     "seed": "dojo_starter",
     "metadata": {
       "profile_name": "dev",
-      "rpc_url": "http://localhost:5050/"
+      "rpc_url": "https://api.cartridge.gg/x/new/katana"
     },
     "name": "dojo::world::world"
   },
